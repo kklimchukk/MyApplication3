@@ -24,7 +24,14 @@ public class MainActivity extends AppCompatActivity {
                 change_text.setText("HELLO FROM UKRAINE!!");
             }
         });
-
+        Button button2= findViewById((R.id.button2));
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "wow, color changed", Toast.LENGTH_SHORT).show();
+                change_text.setTextColor(Color.parseColor("#FF5733"));
+            }
+        });
     }
 
 }
